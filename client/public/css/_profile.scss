@@ -1,0 +1,317 @@
+/** @format */
+
+.profile-box {
+  height: 58vh;
+
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert-user {
+  font-family: "Poppins", sans-serif;
+}
+.profile-contents {
+  width: 46rem;
+  height: 23rem;
+  background-color: #f2f5fa;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 2.2px 2.7px rgba(12, 117, 12, 0.004),
+    0 5.3px 6.4px rgba(0, 0, 0, 0.009), 0 9.9px 12px rgba(0, 0, 0, 0.015),
+    0 17.6px 21.4px rgba(0, 0, 0, 0.023), 0 33px 40.1px rgba(0, 0, 0, 0.036),
+    0 79px 96px rgba(0, 0, 0, 0.07);
+  opacity: 1;
+}
+.profile-active {
+  opacity: 0.8;
+}
+.userprofile-img {
+  position: absolute;
+  right: 0;
+  top: -30%;
+  transform: translateY(30%);
+  width: 120px;
+  height: 120px;
+
+  .main-img {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0px 15px 20px rgba(21, 226, 21, 0.075);
+    }
+  }
+}
+.user-details {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  .userdetails-form {
+    height: 100%;
+    .userform {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      .input-details {
+        margin: 0.3rem 0;
+        label {
+          display: block;
+          font-size: 0.75rem;
+          font-weight: 400;
+          color: rgb(46, 46, 46);
+          letter-spacing: 0.5px;
+        }
+        .input-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .profile-edit-icon {
+            margin-right: 0.3rem;
+            font-size: 0.8rem;
+            padding: 0.3rem;
+            color: rgb(72, 228, 72);
+            cursor: pointer;
+            &:hover {
+              color: rgb(65, 64, 64);
+            }
+          }
+        }
+      }
+      input,
+      textarea {
+        width: 16rem;
+        padding: 0.5rem 0 0.5rem 0.4rem;
+        border: 0;
+        outline: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.65px;
+        border-radius: 0px;
+        border: 2px solid rgba(144, 238, 144, 0);
+        transition: all 0.35s ease-in-out;
+        border-radius: 8px;
+        margin: 0.2rem 0;
+        &:focus {
+          border: 2px solid lightgreen;
+        }
+        &::placeholder {
+          opacity: 0.9;
+          font-size: 0.75rem;
+        }
+        &:-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          opacity: 0.9;
+          font-size: 0.8rem;
+        }
+
+        &::-ms-input-placeholder {
+          /* Microsoft Edge */
+          opacity: 0.9;
+          font-size: 0.8rem;
+        }
+      }
+      .form-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .form-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+.profile-btn {
+  position: absolute;
+  bottom: 4%;
+  right: 1rem;
+  button {
+    position: relative;
+    left: 0.2rem;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem auto 0;
+    width: 9rem;
+    text-align: center;
+    border-radius: 8px;
+    background: rgb(62, 224, 146);
+    color: white;
+    padding: 0.35rem 0.6rem;
+    border: 0;
+    outline: 0;
+    border: 2px solid rgb(115, 233, 176);
+    box-shadow: 0px 10px 20px rgba(100, 232, 168, 0.582);
+    transition: all 0.45s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: transparent;
+      color: black;
+    }
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+}
+.profile-back-btn {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+
+  span {
+    display: block;
+    text-align: center;
+    width: 5rem;
+    border: 0;
+    outline: 0;
+
+    background-color: rgba(185, 185, 185, 0);
+    color: white;
+    padding: 0.5rem 0.6rem;
+    .profile-back-icon {
+      font-size: 1.8rem;
+      color: rgb(62, 224, 146);
+    }
+  }
+}
+.mobile-image {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .profile-box {
+    height: 70vh;
+
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-contents {
+    width: 100%;
+    height: 23rem;
+  }
+
+  .user-details {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    .userdetails-form {
+      height: 100%;
+      .userform {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(56, 46, 46);
+        font-family: "Poppins", sans-serif;
+        position: relative;
+
+        input,
+        textarea {
+          width: 14rem;
+
+          margin: 0.2rem 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .profile-box {
+    height: 72vh;
+
+    padding: 0 0.5rem;
+  }
+  .profile-contents {
+    width: 100%;
+    height: 36rem;
+
+    padding-top: 1rem;
+    margin-top: 5rem;
+  }
+  .user-details {
+    .userdetails-form {
+      .userform {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 1.4rem;
+        .input-details {
+          margin: 0.1rem 0;
+          .input-header {
+            label {
+              font-size: 0.75rem;
+            }
+          }
+        }
+        input,
+        textarea {
+          width: 100%;
+
+          margin: 0.125rem 0;
+        }
+        .form-left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 90%;
+        }
+        .form-right {
+          width: 90%;
+        }
+      }
+    }
+  }
+  .profile-btn {
+    position: relative;
+
+    right: 0;
+
+    bottom: 1rem;
+  }
+  .userprofile-img {
+    position: absolute;
+
+    top: 0rem;
+    right: 2rem;
+    width: 45px;
+    height: 45px;
+    z-index: 500;
+    img {
+      width: 45px;
+      height: 45px;
+      box-shadow: 0px 5px 20px rgba(109, 221, 109, 0.103);
+    }
+  }
+
+  .profile-back-btn {
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+  }
+  .mobile-image {
+    position: fixed;
+    bottom: 1rem;
+    width: 10px;
+    height: 10px;
+
+    z-index: 160;
+    left: 0.5rem;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+    }
+  }
+}

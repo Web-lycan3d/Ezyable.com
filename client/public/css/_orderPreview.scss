@@ -1,0 +1,179 @@
+/** @format */
+
+.dropdown-flow {
+  width: 95%;
+  min-height: 10rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 0rem auto 0.9rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.363);
+  color: #20df86;
+  position: relative;
+
+  .dropdown-flow-left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .items-orderd-list {
+      padding-right: 1rem;
+      width: 25%;
+      span {
+        display: block;
+        text-transform: capitalize;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+        font-size: 1rem;
+      }
+
+      span:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        font-size: 1rem;
+      }
+    }
+    .items-orderd-address {
+      padding-left: 1rem;
+      border-left: 1px solid black;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 0.95rem;
+        border-bottom: 1.25px solid rgba(0, 0, 0, 0.404);
+        line-height: 1.2;
+        padding: 0.2rem 0;
+        font-weight: 500;
+      }
+      span:nth-child(2) {
+        font-weight: 400;
+        border-bottom: 1.5px solid rgba(46, 0, 0, 0);
+        opacity: 1;
+        color: rgb(139, 139, 139);
+      }
+      span:nth-child(3) {
+        font-weight: 400;
+        padding: 0.05rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        color: rgb(139, 139, 139);
+      }
+    }
+  }
+  .dropdown-flow-right {
+    font-family: "Poppins", sans-serif;
+    width: 12rem;
+    span {
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+    .select-option {
+      display: block;
+      width: 100%;
+      border: 2px solid rgba(0, 0, 0, 0);
+      padding: 0.2rem 0.5rem;
+      background: rgba(214, 214, 214, 0.26);
+      outline: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    .data-status {
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 1% 0%;
+      color: rgb(163, 163, 163);
+    }
+    .price-textfield {
+      padding: 0.5% !important;   
+      font-family: "Poppins", sans-serif !important;
+    }
+    button {
+    
+      display: block;
+      width: 100%;
+
+      font-size: 0.8rem;
+      background: transparent;
+      outline: 0;
+      font-family: "Poppins", sans-serif !important;
+      padding: 0.22rem 0.5rem;
+      margin: 1.1rem 0 0;
+      cursor: pointer;
+      transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+      border: 2px solid rgba(243, 134, 134, 0.274);
+      &:hover {
+        letter-spacing: 0.6px;
+      }
+    }
+  }
+}
+.details-address {
+  position: absolute;
+  top: 0rem;
+  left: -1rem;
+  min-width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  color: rgba(109, 109, 109, 0.993);
+  p {
+    text-align: center;
+    margin: 0 0.35rem;
+    font-size: 0.96rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    .address-icons {
+      font-size: 1rem;
+      margin-right: 0.2rem;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .details-address p {
+    font-size: 0.76rem;
+  }
+  .dropdown-flow .dropdown-flow-left {
+    width: 60%;
+  }
+  .dropdown-flow .dropdown-flow-left .items-orderd-address span {
+    font-size: 0.65rem;
+  }
+  .dropdown-flow .dropdown-flow-left .items-orderd-list span {
+    font-size: 0.8rem;
+  }
+  .dropdown-flow .dropdown-flow-left .items-orderd-list span:last-child {
+    font-size: 0.8rem;
+  }
+  .dropdown-flow .dropdown-flow-right span {
+    font-size: 0.8rem;
+  }
+  .dropdown-flow .dropdown-flow-right .data-status {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .details-address p {
+    font-size: 0.86rem;
+  }
+  .dropdown-flow .dropdown-flow-left {
+    width: 60%;
+  }
+  .dropdown-flow .dropdown-flow-left .items-orderd-address span {
+    font-size: 0.75rem;
+  }
+  .dropdown-flow .dropdown-flow-left .items-orderd-list span {
+    font-size: 0.9rem;
+  }
+  .dropdown-flow .dropdown-flow-left .items-orderd-list span:last-child {
+    font-size: 0.9rem;
+  }
+  .dropdown-flow .dropdown-flow-right span {
+    font-size: 0.9rem;
+  }
+  .dropdown-flow .dropdown-flow-right .data-status {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}

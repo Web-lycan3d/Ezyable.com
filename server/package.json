@@ -1,0 +1,37 @@
+{
+  "name": "easyable",
+  "version": "1.0.0",
+  "description": "backend eastable",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix  ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "engines": {
+    "node": "14.15.3"
+  },
+  "author": "lycan3D",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "form-data": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "messagebird": "^3.6.2",
+    "mongoose": "^5.12.13",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "twilio": "^3.64.0",
+    "uuid": "^8.3.2"
+  }
+}

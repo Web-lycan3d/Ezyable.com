@@ -1,0 +1,306 @@
+/** @format */
+
+.account-container {
+  width: 47rem;
+  height: 20rem;
+
+  margin: 0 auto;
+}
+.account-contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.account-details-box {
+  width: 20rem;
+  height: 100%;
+
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  .account-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: rgb(10, 10, 10);
+    position: relative;
+    left: 0.5rem;
+    .account-icon {
+      margin-right: 0.6rem;
+    }
+    &::after {
+      content: "Edit and manage your account details";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: -1.95rem;
+      left: -1.6rem;
+      font-weight: 400;
+      font-size: 0.7rem;
+
+      color: rgba(0, 0, 0, 0.836);
+    }
+  }
+  .feedback-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 0.5rem;
+    .account-icon {
+      margin-right: 0.6rem;
+    }
+    &::after {
+      content: "Reach us with your Feedback and Questions";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: -1.95rem;
+      font-weight: 400;
+      font-size: 0.7rem;
+      left: -1rem;
+      color: rgba(0, 0, 0, 0.836);
+    }
+  }
+  .account-details-contents {
+    padding: 1rem 0;
+
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(242, 245, 250);
+
+    margin-top: 1.5rem;
+    text-align: left;
+    transition: all 0.4s ease;
+    .account-1 {
+      span {
+        padding-left: 1rem;
+        font-size: 0.75rem;
+        color: rgba(39, 38, 38, 0.541);
+      }
+      p {
+        margin: 0.2rem 0;
+        font-size: 1rem;
+        padding-left: 1rem;
+        position: relative;
+        bottom: 0.25rem;
+        font-weight: 500;
+        font-size: 1rem;
+        color: rgb(7, 7, 7);
+      }
+    }
+    .account-1:nth-child(2) {
+      margin-top: 0.8rem;
+      p {
+        margin: 0.1rem 0;
+      }
+    }
+    .account-1:nth-child(3) {
+      margin-top: 0.8rem;
+      p {
+        margin: 0.1rem 0;
+      }
+    }
+    &:hover {
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.103),
+        0px 20px 40px rgba(0, 0, 0, 0.103);
+    }
+  }
+  .account-btn {
+    margin-top: 1rem;
+    button {
+      padding: 0.5rem 0.8rem;
+      border: 0;
+      outline: 0;
+      width: 10rem;
+      background: linear-gradient(-45deg, #14ae63, #5ce2a1);
+      border-radius: 15px;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0.6px;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      position: relative;
+      right: 5rem;
+
+      &:hover {
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.103);
+      }
+    }
+  }
+}
+
+.feeback-details-content {
+  padding: 2rem 0 0.7rem;
+
+  border-radius: 15px;
+  width: 100%;
+  height: 10.8rem;
+  background-color: rgb(242, 245, 250);
+
+  margin-top: 1.5rem;
+  text-align: left;
+  transition: all 0.4s ease;
+  .fb {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      margin: 0.2rem 0;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      color: rgba(0, 0, 0, 0.863);
+      font-weight: 500;
+      .nav-links {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.863);
+        transition: 0.35s ease-in-out;
+        &:hover {
+          color: rgb(6, 236, 56);
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.103),
+      0px 20px 40px rgba(0, 0, 0, 0.103);
+  }
+}
+.mobile-profile {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .account-container {
+    width: 90%;
+    height: 16rem;
+
+    margin: 0 auto;
+    position: relative;
+    bottom: 2.5rem;
+  }
+  .account-contents {
+    flex-direction: column;
+
+    align-items: center;
+    .account-details-box {
+      margin: 2rem 0 1rem;
+    }
+    .account-details-box:nth-child(2) {
+      margin: 4rem 0 1rem;
+    }
+  }
+  .mobile-profile {
+    display: none;
+  }
+  .account-details-box {
+    .account-btn {
+      margin-top: 0rem;
+      button {
+        padding: 0.5rem 0.8rem;
+        margin-top: 1rem;
+        width: 10rem;
+        right: 4rem;
+        &:hover {
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.103);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .account-container {
+    width: 90%;
+    height: 65vh;
+
+    margin: 0 auto;
+
+    bottom: 0;
+  }
+  .account-contents {
+    align-items: center;
+    overflow-y: auto;
+    .account-details-box {
+      width: 18.5rem;
+      margin: 1.5rem 0 1rem;
+      position: relative;
+      bottom: 2rem;
+    }
+    .account-details-box:nth-child(2) {
+      margin: 1rem 0 1rem;
+    }
+  }
+  .mobile-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    right: 1rem;
+    bottom: 0.5rem;
+    margin: 0 auto 1rem;
+    .mobile-profile-img {
+      margin-right: 1rem;
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.068);
+      }
+    }
+    .mobile-profile-details {
+      font-family: "Poppins", sans-serif;
+      h3 {
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      p {
+        margin-top: 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .account-details-box {
+    .account-header {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    .account-details-contents {
+      .account-1 {
+        p {
+          font-size: 0.95rem;
+          font-weight: 400;
+        }
+      }
+    }
+    .feedback-header {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    .feeback-details-content {
+      .fb {
+        p {
+          font-size: 1.1rem;
+          font-weight: 400;
+
+          color: black;
+        }
+      }
+    }
+  }
+}

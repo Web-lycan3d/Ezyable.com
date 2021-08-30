@@ -1,0 +1,19 @@
+{
+  "name": "easyable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-lycan3d/back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-lycan3d/back/issues"
+  },
+  "homepage": "https://github.com/Web-lycan3d/back#readme"
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="321" viewBox="0 0 450 321">
+  <defs>
+    <filter id="Ellipse_33" x="0" y="0" width="194" height="195" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_34" x="257" y="126" width="193" height="195" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.058" y1="0.036" x2="1" y2="0.945" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_204" data-name="Group 204" transform="translate(-784 -440)">
+    <g transform="matrix(1, 0, 0, 1, 784, 440)" filter="url(#Ellipse_33)">
+      <ellipse id="Ellipse_33-2" data-name="Ellipse 33" cx="67" cy="67.5" rx="67" ry="67.5" transform="translate(30 27)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 784, 440)" filter="url(#Ellipse_34)">
+      <ellipse id="Ellipse_34-2" data-name="Ellipse 34" cx="66.5" cy="67.5" rx="66.5" ry="67.5" transform="translate(287 153)" fill="#fff"/>
+    </g>
+    <path id="Path_111" data-name="Path 111" d="M111.8,0A111.8,111.8,0,1,0,223.6,111.8,111.741,111.741,0,0,0,111.8,0ZM85.2,158.964s-38.616-38.632-41.392-41.4A15.834,15.834,0,0,1,66.2,95.169l25,25a7.92,7.92,0,0,0,11.236-.037l54.892-55.684a15.833,15.833,0,0,1,22.551,22.229c-59.61,60.481-70.931,72.281-70.931,72.281A16.819,16.819,0,0,1,85.2,158.964Z" transform="translate(897.211 481.861)" fill="url(#linear-gradient)"/>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M43.336,200.225a112.152,112.152,0,0,1-31.517-38.3,111.222,111.222,0,0,1-8.746-23.953A112.52,112.52,0,0,1,0,111.8,111.784,111.784,0,0,1,174.619,19.275,112.46,112.46,0,0,1,191.2,33.053,111.3,111.3,0,0,0,113.324,1.519C51.674,1.519,1.519,51.6,1.519,113.157a111.121,111.121,0,0,0,41.819,87.066Z" transform="translate(896.02 480.67)" fill="#fff" opacity="0.8"/>
+    <path id="Subtraction_3" data-name="Subtraction 3" d="M38.716,196.443a112.034,112.034,0,0,1-28.235-37.276,111.232,111.232,0,0,1-7.763-22.723A112.668,112.668,0,0,1,0,111.8,111.783,111.783,0,0,1,175.482,19.867a112.47,112.47,0,0,1,16.691,14.18,111.378,111.378,0,0,0-77.331-31.01C53.193,3.037,3.037,53.118,3.037,114.676a111.949,111.949,0,0,0,35.68,81.765Z" transform="translate(1120.634 705.197) rotate(180)" fill="#fff" opacity="0.8"/>
+    <path id="Subtraction_4" data-name="Subtraction 4" d="M35.044,179.735a102.344,102.344,0,0,1-32.583-54.9A104.154,104.154,0,0,1,0,102.293a102.529,102.529,0,0,1,29.625-72.35A100.342,100.342,0,0,1,101.2,0,99.7,99.7,0,0,1,141.39,8.37a100.843,100.843,0,0,1,17.448,9.808,102.1,102.1,0,0,1,15.108,12.974,100.243,100.243,0,0,0-70-28.373c-55.8,0-101.2,45.821-101.2,102.143a102.945,102.945,0,0,0,32.3,74.81Z" transform="matrix(0.995, 0.105, -0.105, 0.995, 924.563, 486.446)" fill="#fff"/>
+    <path id="Subtraction_5" data-name="Subtraction 5" d="M35.044,179.735a102.344,102.344,0,0,1-32.583-54.9A104.154,104.154,0,0,1,0,102.293a102.529,102.529,0,0,1,29.625-72.35A100.342,100.342,0,0,1,101.2,0,99.7,99.7,0,0,1,141.39,8.37a100.843,100.843,0,0,1,17.448,9.808,102.1,102.1,0,0,1,15.108,12.974,100.243,100.243,0,0,0-70-28.373c-55.8,0-101.2,45.821-101.2,102.143a102.945,102.945,0,0,0,32.3,74.81Z" transform="matrix(0.995, 0.105, -0.105, 0.995, 920.045, 480.41)" fill="#fff"/>
+    <path id="Subtraction_8" data-name="Subtraction 8" d="M35.044,179.735a102.343,102.343,0,0,1-32.583-54.9A104.154,104.154,0,0,1,0,102.293a102.528,102.528,0,0,1,29.625-72.35A100.342,100.342,0,0,1,101.2,0,99.7,99.7,0,0,1,141.39,8.37a100.844,100.844,0,0,1,17.448,9.808,102.1,102.1,0,0,1,15.108,12.974,100.243,100.243,0,0,0-70-28.373c-55.8,0-101.2,45.821-101.2,102.143a102.944,102.944,0,0,0,32.3,74.81Z" transform="matrix(-0.995, -0.105, 0.105, -0.995, 1096.769, 705.379)" fill="#fff"/>
+  </g>
+</svg>
