@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import ApiUrl from "../../../ApiUrl";
 import { useHistory } from "react-router-dom";
-import { Alert, AlertTitle } from '@material-ui/lab';
+import { Alert, AlertTitle } from "@material-ui/lab";
 import Login from "../Auth/Login";
 import OrderOverview from "../../AdminDashboard/OrderOverview.component";
 import NavHeader from "../../NavComponents/NavHeader";
@@ -50,12 +50,16 @@ const AdminDashboard = () => {
   const updateState = () => {
     setupState(!upstate);
     setAlertState(!alertState);
-
   };
 
   const fetchData = async () => {
+    const authToken = localStorage.getItem("authToken");
     try {
-      const { data } = await axios.get(backendUrl + "/admin/userdata");
+      const { data } = await axios.get(backendUrl + "/admin/userdata", {
+        headers: {
+          authorization: `Bearer ${authToken}`,
+        },
+      });
       data && setUserData(data);
     } catch (error) {
       console.log(error);
@@ -98,10 +102,10 @@ const AdminDashboard = () => {
     }
   };
 
-  if(alertState){
+  if (alertState) {
     setTimeout(() => {
-      setAlertState(!alertState)
-    }, 5000)
+      setAlertState(!alertState);
+    }, 5000);
   }
   return (
     <>
@@ -109,10 +113,14 @@ const AdminDashboard = () => {
       {adminState && (
         <div className="admin-dashboard-container">
           {" "}
-          {alertState ? (<Alert severity="success">
-            <AlertTitle>Success</AlertTitle>
-            Updated the documents
-          </Alert>) : ""}
+          {alertState ? (
+            <Alert severity="success">
+              <AlertTitle>Success</AlertTitle>
+              Updated the documents
+            </Alert>
+          ) : (
+            ""
+          )}
           <div className="admin-dsahboard-header">
             <div className="admin-dashboard-heading">
               <h1>Admin Dashboard</h1>{" "}

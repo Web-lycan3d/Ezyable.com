@@ -7,6 +7,18 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const saltRounds = 10;
 const { v4: uuidv4 } = require("uuid");
+const otpGenerator = require("otp-generator");
+const nodemailer = require("nodemailer");
+const sgTransport = require("nodemailer-sendgrid-transport");
+
+const transport = nodemailer.createTransport(
+  sgTransport({
+    auth: {
+      api_key:
+        "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",
+    },
+  })
+);
 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
@@ -44,6 +56,50 @@ router.post("/login", async (req, res) => {
 //   const authcookie = req.cookies.authcookie;
 //   console.log(authcookie);
 // });
+router.post("/generate/otp", async (req, res) => {
+  const otp = otpGenerator.generate(6, {
+    digits: true,
+    alphabets: false,
+    upperCase: false,
+    specialChars: false,
+  });
+
+  transport
+    .sendMail({
+      to: req.body.email,
+      from: "support@teainbox.in",
+      subject: "User verification for Ezyable",
+      html: `<head>
+    <style type="text/css">
+    body, p, div {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+    }
+    
+   img{
+     width:90px;
+     height:90px;
+     object-fit:contain;
+   }
+  </style>
+  <title></title>
+  </head>
+  <body>
+  <div class="center">
+  <img src="https://i.ibb.co/qCDsFg2/Union-1.png" alt="err" />
+  <p>
+    The verification code is: <strong>${otp}</strong>
+  </p>
+  </div>
+ </body>`,
+    })
+    .then((res1) => {
+      res.json({ otp: otp });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 router.post("/register", (req, res) => {
   const { username, email, password, phone_number, address, pincode, city } =
     req.body;

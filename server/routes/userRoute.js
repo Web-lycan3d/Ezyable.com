@@ -9,8 +9,8 @@ const { v4: uuidv4 } = require("uuid");
 
 const port = process.env.PORT || 4000;
 
-const accountSid = "";
-const authToken = "";
+const accountSid = "AC51f9e2a60936c7f96d93dc4d0a21cfb4";
+const authToken = "2b2b8ad1fa1ad922709ef4e333cedeb8";
 const client = require("twilio")(accountSid, authToken);
 
 function verifyUser(req, res, next) {
@@ -70,7 +70,7 @@ router.post("/services", async (req, res) => {
   console.log("S");
   try {
     client.verify
-      .services("")
+      .services("VAd5706b0f3e75ac65d04f7e024ecb3da3")
       .verifications.create({
         to: "+" + phone_number,
         channel: "sms",
@@ -85,7 +85,7 @@ router.post("/services", async (req, res) => {
 });
 router.post("/verify/call", (req, res) => {
   client.verify
-    .services("")
+    .services("VAd5706b0f3e75ac65d04f7e024ecb3da3")
     .verifications.create({
       to: "+" + req.body.phone_number,
       channel: "call",
@@ -133,7 +133,7 @@ router.post("/verify", (req, res) => {
   const { otpValue, messageToken } = req.body;
 
   client.verify
-    .services("")
+    .services("VAd5706b0f3e75ac65d04f7e024ecb3da3")
     .verificationChecks.create({ to: "+" + messageToken, code: otpValue })
     .then((data) => {
       if (data.valid) {

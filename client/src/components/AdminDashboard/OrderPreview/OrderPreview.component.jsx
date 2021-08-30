@@ -22,8 +22,13 @@ const OrderdItems = ({ data, userid, updateState }) => {
       id: id,
       userid: userid,
     };
-    console.log(Datalist);
-    const resp = await axios.post(backendUrl + "/admin/data/update", Datalist);
+
+    const authToken = localStorage.getItem("authToken");
+    const resp = await axios.post(backendUrl + "/admin/data/update", Datalist, {
+      headers: {
+        authorization: `Bearer ${authToken}`,
+      },
+    });
     if (resp) updateState();
   };
 
