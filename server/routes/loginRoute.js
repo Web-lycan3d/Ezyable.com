@@ -106,7 +106,7 @@ router.post("/register", (req, res) => {
 
   let imageUrl = `https://ui-avatars.com/api/?name=${username}`;
   let userid = uuidv4();
-  console.log(email.toLowerCase());
+
   if (
     email.toLowerCase() === "kk968347@gmail.com" &&
     password === "qwerty@A1"

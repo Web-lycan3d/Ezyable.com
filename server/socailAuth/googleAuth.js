@@ -8,10 +8,10 @@ const googleAuth = (passport) => {
   passport.use(
     new GoogleStratergy(
       {
-        clientID: "771166917642-nqa9t9tvrmvkm65dpgrdt6qddrgpcfbe.apps.googleusercontent.com",
+        clientID:
+          "771166917642-nqa9t9tvrmvkm65dpgrdt6qddrgpcfbe.apps.googleusercontent.com",
         clientSecret: "Y8d-NyMAhG7ejNmbz9kTcqAr",
-        callbackURL:
-          "https://young-hollows-10236.herokuapp.com/google/auth/main",
+        callbackURL: "https://ezyable.herokuapp.com/google/auth/main",
       },
       async function (accessToken, refreshToken, profile, cb) {
         try {
