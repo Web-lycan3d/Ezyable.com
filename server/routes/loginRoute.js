@@ -94,6 +94,7 @@ router.post("/generate/otp", async (req, res) => {
  </body>`,
     })
     .then((res1) => {
+      console.log(res1);
       res.json({ otp: otp });
     })
     .catch((err) => {

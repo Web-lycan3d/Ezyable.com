@@ -454,7 +454,7 @@ const Services = () => {
                   <div className="verfiy-otp">
                     <h2>
                       OTP Sent to{" "}
-                      {userData || userData2
+                      {userData?.PhoneNo
                         ? userData.PhoneNo
                         : userData2?.phone_number}
                     </h2>

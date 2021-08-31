@@ -9,8 +9,8 @@ const { v4: uuidv4 } = require("uuid");
 
 const port = process.env.PORT || 4000;
 
-const accountSid = "";
-const authToken = "";
+const accountSid = "AC51f9e2a60936c7f96d93dc4d0a21cfb4";
+const authToken = "d1c37c446eccc8299b282a3a6ae12873";
 const client = require("twilio")(accountSid, authToken);
 
 function verifyUser(req, res, next) {
@@ -70,7 +70,7 @@ router.post("/services", async (req, res) => {
   console.log("S");
   try {
     client.verify
-      .services("")
+      .services("VAd5706b0f3e75ac65d04f7e024ecb3da3")
       .verifications.create({
         to: "+" + phone_number,
         channel: "sms",
@@ -85,7 +85,7 @@ router.post("/services", async (req, res) => {
 });
 router.post("/verify/call", (req, res) => {
   client.verify
-    .services("")
+    .services("VAd5706b0f3e75ac65d04f7e024ecb3da3")
     .verifications.create({
       to: "+" + req.body.phone_number,
       channel: "call",
@@ -104,6 +104,7 @@ router.post("/services/update", async (req, res) => {
     address,
     price,
     service,
+    city,
   } = req.body;
   let orders = [
     {
@@ -111,12 +112,13 @@ router.post("/services/update", async (req, res) => {
       userId: userId,
       orderBy: username,
       orderId: uuidv4(),
-      date: new Date().toLocaleString(),
+      date: new Date().toLocaleDateString(),
       orderMobileNo: phone_number,
       orderAddress: address,
       orderPincode: pincode,
       orderEmail: email,
       price: price,
+      city: city,
     },
   ];
   const orderUpdate = await User.updateOne(
@@ -133,7 +135,7 @@ router.post("/verify", (req, res) => {
   const { otpValue, messageToken } = req.body;
 
   client.verify
-    .services("")
+    .services("VAd5706b0f3e75ac65d04f7e024ecb3da3")
     .verificationChecks.create({ to: "+" + messageToken, code: otpValue })
     .then((data) => {
       if (data.valid) {
@@ -148,7 +150,7 @@ router.post("/verify", (req, res) => {
 });
 router.post("/update", async (req, res) => {
   const { user } = req.query;
-  const { username, phone_number, email, pincode, address } = req.body;
+  const { username, phone_number, email, pincode, address, city } = req.body;
 
   try {
     const usersData = await User.findOne({ userId: user });
@@ -157,6 +159,7 @@ router.post("/update", async (req, res) => {
     usersData.email = email;
     usersData.Pincode = pincode;
     usersData.address = address;
+    usersData.city = city;
     await usersData.save();
     return res.json({ updateStatus: true });
   } catch (error) {

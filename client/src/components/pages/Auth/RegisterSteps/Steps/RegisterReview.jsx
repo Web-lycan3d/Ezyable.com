@@ -94,7 +94,7 @@ const RegisterReview = ({ formData, navigation }) => {
       ) : (
         <div className="otp-form">
           <h1>OTP sent to </h1>
-          <span>kk968345@gmail.com</span>
+          <span>{email ? email : ""}</span>
           {otpError && (
             <>
               <span className="otp-error">Not a valid OTP</span>

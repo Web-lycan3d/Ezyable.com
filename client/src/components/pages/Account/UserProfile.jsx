@@ -473,7 +473,7 @@ const UserProfile = () => {
                               <input
                                 type="text"
                                 name="City"
-                                value={userData && userData.city}
+                                value={userData.city}
                                 readOnly
                                 {...register("city")}
                               />
