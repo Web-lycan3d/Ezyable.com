@@ -89,6 +89,7 @@ const Services = () => {
 
     data.service = serviceName;
 
+    setUserData2(data);
     setBtnLoader(true);
     setOtpState(false);
     setCallState(false);
@@ -98,8 +99,6 @@ const Services = () => {
       setOtpState(true);
       setMobileScrollState(true);
     }, 2000);
-
-    setUserData2(data);
 
     try {
       const serviceResp = await axios.post(url + "/services", data, {

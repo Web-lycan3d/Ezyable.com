@@ -3,8 +3,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  AiOutlineFacebook,
-  AiOutlineInstagram,
+  AiFillLinkedin,
+  AiFillYoutube,
   AiOutlineTwitter,
 } from "react-icons/ai";
 
@@ -37,7 +37,8 @@ const Footer = ({ colorState }) => {
           </h3>
           <h3>
             <Link
-              to="/contact"
+              to={{ pathname: "https://goo.gl/maps/phJq31qsXeJigBEc8" }}
+              target="_blank"
               className={
                 colorState
                   ? "nav-links link-color-1 "
@@ -48,27 +49,45 @@ const Footer = ({ colorState }) => {
           </h3>
         </div>
         <div className="socail-media-icons">
-          <AiOutlineFacebook
-            className={
-              colorState
-                ? "nav-links link-color-1 socail-icons"
-                : "nav-links link-color-2 socail-icons"
-            }
-          />
-          <AiOutlineInstagram
-            className={
-              colorState
-                ? "nav-links link-color-1 socail-icons "
-                : "nav-links link-color-2 socail-icons"
-            }
-          />
-          <AiOutlineTwitter
-            className={
-              colorState
-                ? "nav-links link-color-1 socail-icons "
-                : "nav-links link-color-2 socail-icons"
-            }
-          />
+          <Link
+            to={{
+              pathname:
+                "https://www.linkedin.com/company/ezyable/about/?viewAsMember=true",
+            }}
+            target="_blank">
+            <AiFillLinkedin
+              className={
+                colorState
+                  ? "nav-links link-color-1 socail-icons"
+                  : "nav-links link-color-2 socail-icons"
+              }
+            />
+          </Link>
+          <Link
+            to={{
+              pathname:
+                "https://www.youtube.com/channel/UCUDxlMVMoS-ASIWVBXDIYwA",
+            }}
+            target="_blank">
+            <AiFillYoutube
+              className={
+                colorState
+                  ? "nav-links link-color-1 socail-icons "
+                  : "nav-links link-color-2 socail-icons"
+              }
+            />
+          </Link>
+          <Link
+            to={{ pathname: "https://twitter.com/Ezyable1" }}
+            target="_blank">
+            <AiOutlineTwitter
+              className={
+                colorState
+                  ? "nav-links link-color-1 socail-icons "
+                  : "nav-links link-color-2 socail-icons"
+              }
+            />
+          </Link>
         </div>
       </div>
       <div className="terms-service">

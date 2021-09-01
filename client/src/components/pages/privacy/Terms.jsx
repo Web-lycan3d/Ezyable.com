@@ -22,17 +22,17 @@ const Privacy = () => {
             <div className="privacy-contents">
               <h4>Please read the following terms and conditions carefully</h4>
               <p>
-                If you wish to book a Technician/Private Repair Professional via
-                our website www.ezyable.com, you must agree to the terms below
-                as the exclusive basis which governs such booking and must click
-                “ I agree to ezyable terms and conditions” box on the main
-                registration and booking contacts information page. If you do
-                not agree to any of the terms, do not book a Private Repair
-                Professional/Technician via this website. If you are booking on
-                behalf of someone else, by clicking I agree to ezyable’s Terms
-                Conditions , you are representing that you have their
-                authorization to accept these terms and conditions on their
-                behalf.
+                If you wish to book a Professional service via our website
+                www.ezyable.com, you must agree to the terms below as the
+                exclusive basis which governs such booking and by default you
+                agree to ezyable terms and conditions on the main account
+                registration page while creating an account on www.ezyable.com .
+                If you do not agree to any of the terms, do not book a Private
+                Repair Professional/Technician via this website. If you are
+                booking on behalf of someone else, by default you agree to
+                ezyable’s Terms & Conditions and you are representing that you
+                have their authorization to accept these terms and conditions on
+                their behalf.
               </p>
               <h4>READ THESE USER TERMS CAREFULLY BEFORE USING OUR WEBSITE</h4>
               <h5>1. Genera T&C</h5>
@@ -53,14 +53,14 @@ const Privacy = () => {
               </p>
               <h5>2. Services</h5>
               <p>
-                a. The Company provides technology based services for providing
+                The Company provides technology based services for providing
                 home solutions in Bangalore such as repairing / services of home
                 products to you and you agree to obtain the services offered by
                 third party technicians / Service Providers / Private Repair
-                Professionals "the Service Provider". All the Services provided
-                by the Company to you by means of your use of the registration
-                on the website of the Company are hereinafter referred to as the
-                "Service."
+                Professionals ("the Service Provider"). All the Services
+                provided by the Company to you by means of your use of the
+                registration on the website of the Company are hereinafter
+                referred to as the "Service."
               </p>
               <p>
                 b. The entire Booking request as may be directed by the customer
@@ -78,7 +78,7 @@ const Privacy = () => {
                 {" "}
                 c. In case, the Service Provider accepts the booking request
                 made by you with the Company, your information is sent to the
-                Service provider including your name, contact number etc.{" "}
+                Service provider including your name, contact number etc.
               </p>
               <p>
                 d. Company shall endeavor reasonable efforts to bring you in
@@ -96,14 +96,14 @@ const Privacy = () => {
                 the relevant information submitted with the company while
                 registering with the company. The provision of the services to
                 be rendered by the Service Provider to you is therefore subject
-                to the agreement to be entered into between you and the Service
-                Provider and the Company shall never be a party to such
+                to the agreement (to be) entered into between you and the
+                Service Provider and the Company shall never be a party to such
                 agreement, in any manner whatsoever. Acceptance of booking
                 request by the Company and the Service Provider does not reach
                 your service location or decide not to render services, in that
                 case / event the Company shall not be held liable to you in any
                 manner whatsoever and neither the Customer is under obligation
-                to make any payment in lieu thereof.{" "}
+                to make any payment in lieu thereof.
               </p>
               <p>
                 {" "}
@@ -119,10 +119,10 @@ const Privacy = () => {
               </p>
               <p>
                 {" "}
-                g. You will treat Service provider introduced to you through us
+                g.You will treat Service provider introduced to you through us
                 with respect and not to cause damage to them or engage in any
                 unlawful, threatening, harassing, abusive behavior or activity
-                whilst using their service;{" "}
+                whilst using their service;
               </p>
               <p>
                 h. Before handing over the products to be repaired the customer
@@ -144,7 +144,7 @@ const Privacy = () => {
                 Service. In case the same is not discussed, it is implied that
                 the customer is aware of the service charges and has consented
                 to avail the services as may be informed or directed by the
-                service provider.{" "}
+                service provider.
               </p>
               <p>
                 {" "}

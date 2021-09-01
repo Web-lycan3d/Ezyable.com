@@ -34,6 +34,7 @@ const About = () => {
                 <h2>
                   {" "}
                   Isn't it practically impossible to find trustworthy providers, who can consistently deliver impeccable service on time for small but important everyday needs?
+                  <br/>
                   We are a Bangalore based startup aiming to seamlessly connect the dots and flourish a network of skilled professionals for users across India seeking specific services.
                 </h2>
               </motion.div>
@@ -59,6 +60,7 @@ const About = () => {
                 <h2>
                   {" "}
                   Isn't it practically impossible to find trustworthy providers, who can consistently deliver impeccable service on time for small but important everyday needs?
+                  <br />
                   We are a Bangalore based startup aiming to seamlessly connect the dots and flourish a network of skilled professionals for users across India seeking specific services.
                 </h2>
                 <motion.p

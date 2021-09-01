@@ -26,7 +26,7 @@ const OrderPlaced = () => {
               <img src="../images/final.svg" alt="error" />
               <p>
                 A <strong>payment link</strong> will be sent to your mobile
-                number once the service is finished please complete the payment
+                number once the service is finished, please complete the payment
                 and share your experience by rating us and giving us your
                 valuable feedback
               </p>

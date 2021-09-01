@@ -778,7 +778,7 @@ body {
         font-size: 1.7rem;
       }
       h3:nth-child(3) {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         .nav-links {
           &:hover {
             color: rgb(233, 233, 233) !important;
@@ -883,7 +883,7 @@ body {
         line-height: 1.2;
         margin-bottom: 0.5rem;
         position: absolute;
-        top: -10rem;
+        top: -10.25rem;
 
         padding-left: 0.35rem;
         strong {
@@ -892,7 +892,7 @@ body {
       }
       h6 {
         position: relative;
-        bottom: 0rem;
+        bottom: 0.25rem;
         padding-right: 0.25rem;
         display: block;
         font-size: 1rem;
@@ -967,23 +967,18 @@ body {
 }
 @media screen and (max-width: 350px) {
   .home-search-box {
-    width: 90%;
+    width: 18rem;
 
+    height: 12rem;
+    position: relative;
     .home-search-text {
-      bottom: -3rem;
-      width: 100%;
-
       h1 {
-        margin-top: 2rem;
-        line-height: 1.2;
-        font-size: 1.15rem;
-        margin-bottom: 0.8rem;
-        padding-left: 0.15rem;
+        font-size: 1.25rem;
       }
       h6 {
-        font-weight: 400;
         font-size: 0.85rem;
-        padding-right: 0.15rem;
+        position: relative;
+        bottom: 1rem;
       }
     }
     .home-search {

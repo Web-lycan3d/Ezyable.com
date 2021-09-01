@@ -5,7 +5,7 @@ import Accoradation from "./Accoradation";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
 import ApiUrl from "../../../../../ApiUrl";
-
+import { motion } from "framer-motion";
 const RegisterReview = ({ formData, navigation }) => {
   const [optState, setOtpState] = useState(true);
   const [otpValue, setOtpValue] = useState(null);
@@ -92,7 +92,12 @@ const RegisterReview = ({ formData, navigation }) => {
           </button>
         </div>
       ) : (
-        <div className="otp-form">
+        <motion.div
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          className="otp-form">
           <h1>OTP sent to </h1>
           <span>{email ? email : ""}</span>
           {otpError && (
@@ -113,7 +118,7 @@ const RegisterReview = ({ formData, navigation }) => {
             />
             <button type="submit">Verify</button>
           </form>
-        </div>
+        </motion.div>
       )}
     </>
   );

@@ -24,19 +24,20 @@ const Privacy = () => {
             <div className="privacy-contents">
               <h5>GENERAL</h5>
               <p>
-                The website www.ezyable.com the Helpr Mobile Application is
-                owned and operated by Helpr Infotech India Private Limited
-                “Company”. This privacy policy “Privacy Policy” applies to the
-                Website to comply with data protection legislation. This Privacy
-                Policy regulates the processing of information relating to You
-                and grants You various rights in respect of the information You
-                provide us with. By accessing or using the Website, You agree to
-                be bound by the terms and conditions of this Privacy Policy. If
-                You do not agree please do not use or access Our Website. By
-                mere use of the Website, You expressly consent to Our use and
-                disclosure of Your Information as defined below in accordance
-                with this Privacy Policy, however obtained. This Privacy Policy
-                is incorporated into and subject to the Terms of Service.
+                The website www.ezyable.com / ezyable is owned and operated by
+                Ezyable Private Limited “Company”. This privacy policy “Privacy
+                Policy” applies to the Website to comply with data protection
+                legislation. This Privacy Policy regulates the processing of
+                information relating to You and grants You various rights in
+                respect of the information You provide us with.
+                <br />
+                By accessing or using the Website, You agree to be bound by the
+                terms and conditions of this Privacy Policy. If You do not agree
+                please do not use or access Our Website. By mere use of the
+                Website, You expressly consent to Our use and disclosure of Your
+                Information as defined below in accordance with this Privacy
+                Policy, however obtained. This Privacy Policy is incorporated
+                into and subject to the Terms of Service.
               </p>
               <h5>INFORMATION COLLECTED AND METHOD OF COLLECTION</h5>
               <p>
@@ -85,6 +86,11 @@ const Privacy = () => {
                 Financial information such as bank account details, credit card
                 details or other payment related details are collected at the
                 payment gateway by the payment facilitator.
+              </p>
+              <p>
+                We collect your Information either directly from You through
+                forms on the Website and through optional online surveys or
+                third party sources that provide such Information to Us.
               </p>
               <h5>Location</h5>
               <p>
@@ -224,6 +230,15 @@ const Privacy = () => {
                 been made, it would be deemed to be Your implied consent to the
                 changed Privacy Policy.
               </p>
+              <h5>CHANGES TO THIS PRIVACY POLICY</h5>
+              <p>
+                We reserve the right to update, change or modify this Privacy
+                Policy at any time. The Privacy Policy shall come to effect from
+                the date of such update, change or modification. If You continue
+                to access or use the Website even after any such changes have
+                been made, it would be deemed to be Your implied consent to the
+                changed Privacy Policy.
+              </p>
               <h5>COOKIES AND OTHER TRACKING TECHNOLOGIES</h5>
               <p>
                 We utilize “cookies” and other tracking technologies. A “cookie”
@@ -242,6 +257,16 @@ const Privacy = () => {
                 and times that Our Website is accessed. Our use of cookies and
                 other tracking technologies allows Us to improve Our Website and
                 Your experience.
+              </p>
+              <h5>INDEMNITY</h5>
+              <p>
+                You agree and undertake to indemnify Us in any suit or dispute
+                by any third party arising out of disclosure of Information by
+                You to third parties either through Our Website or otherwise and
+                Your use and access of websites, applications and resources of
+                third parties. We assume no liability for any actions of third
+                parties with regard to Your Information, which You may have
+                disclosed to such third parties.
               </p>
               <h5>DISCLAIMER</h5>
               <p>
@@ -263,26 +288,16 @@ const Privacy = () => {
                 indicated by the context of the agreement.
               </p>
               <p>
-                You agree and undertake to indemnify Us in any suit or dispute
-                by any third party arising out of disclosure of Information by
-                You to third parties either through Our Website or otherwise and
-                Your use and access of websites, applications and resources of
-                third parties. We assume no liability for any actions of third
-                parties with regard to Your Information, which You may have
-                disclosed to such third parties.
-              </p>
-              <p>
                 The decision or declaration that one or more of the clauses are
                 null and void shall have no effect on the remaining clauses of
                 this Privacy Policy.
               </p>{" "}
-              <h5>CHANGES TO THIS PRIVACY POLICY</h5>
+              <h5>CONTACT INFORMATION</h5>
               <p>
                 Any feedback or comments about this Privacy Policy is welcome
                 and can be sent to support@ezyable.com We will employ all
                 commercially reasonable efforts to address the same.
               </p>
-              <p></p>
             </div>
           </div>
 
