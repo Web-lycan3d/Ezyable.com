@@ -9,11 +9,11 @@ const { v4: uuidv4 } = require("uuid");
 
 const port = process.env.PORT || 4000;
 
-<<<<<<< HEAD
+ 
 const accountSid = " ";
-=======
+ 
 const accountSid = "";
->>>>>>> 24f9dccd7472336c801071bc83aa9d7b44b52ffd
+ 
 const authToken = "";
 const client = require("twilio")(accountSid, authToken);
 
