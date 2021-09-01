@@ -9,7 +9,11 @@ const { v4: uuidv4 } = require("uuid");
 
 const port = process.env.PORT || 4000;
 
+<<<<<<< HEAD
 const accountSid = " ";
+=======
+const accountSid = "";
+>>>>>>> 24f9dccd7472336c801071bc83aa9d7b44b52ffd
 const authToken = "";
 const client = require("twilio")(accountSid, authToken);
 
@@ -70,7 +74,11 @@ router.post("/services", async (req, res) => {
   console.log("S");
   try {
     client.verify
+<<<<<<< HEAD
       .services(" ")
+=======
+      .services("")
+>>>>>>> 24f9dccd7472336c801071bc83aa9d7b44b52ffd
       .verifications.create({
         to: "+" + phone_number,
         channel: "sms",
@@ -85,7 +93,11 @@ router.post("/services", async (req, res) => {
 });
 router.post("/verify/call", (req, res) => {
   client.verify
+<<<<<<< HEAD
     .services(" ")
+=======
+    .services("")
+>>>>>>> 24f9dccd7472336c801071bc83aa9d7b44b52ffd
     .verifications.create({
       to: "+" + req.body.phone_number,
       channel: "call",
